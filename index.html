@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Main Page</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+    <main class="main_container">
+        <div class="titulo">
+           <h1 id="h1">Pagina de encriptado <span>Ingrese el texto que desea codificar</span></h1>
+        </div>
+        <div class="container_all">
+             <div class="conteiner_encriptado">
+                <button onclick="encriptarTexto();" class="encriptar" type="button">Encriptar</button>               
+                <textarea name="container_encriptar_texto" id="texto" placeholder="Encripte aqui" cols="30" rows="5"></textarea>                
+             </div>
+             <div class="container_desencriptado">
+                <button onclick="desencriptarTexto();" class="desencriptar" type="button">Des-encriptar</button>
+                <textarea class="container_desencriptado_texto" name="texto_2" id="texto_2" cols="30" rows="5"></textarea>                
+             </div>
+             <div class="container_copiar">
+                <button onclick="copiarTexto();" class="copiar" type="button">Copiar</button>
+                <textarea class="copiar_texto" name="copy" id="copy" cols="30" rows="5"></textarea>
+             </div>             
+        </div>
+        <div class="imagen_container">
+            <img class="imagen" src="img/robot1.png" alt="">
+        </div>  
+          
+    </main>  
+   <footer class="footer"> &#169 Developer Jonathan L. Flores all rights reserved</footer>     
+</body>
+<script src="app.js"></script>
+</html>
