@@ -263,6 +263,10 @@ transform: scale(1.1);
     bottom: 45px;
 }
 
+.main_container_about{
+    width: 95%;
+    margin-left: 7px;
 
+}
  }
 
