@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{    
+    box-sizing: border-box;
+    background: linear-gradient(70deg,black, darkblue);      
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+       
+}
+main{
+    width: 100vw;    
+    height: 100hv;
+    display: flex;
+    flex-direction: row;        
+    margin: 20px;
+   
+}
+a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.titulo{    
+    display: flex;
+    width: 37%;    
+    height: 15%;
+    position: absolute;
+    left: 19%;
+    align-items: center;
+    text-align: right;
+
+}
+h1{
+    color: white;    
+    font-family: "Flamenco", system-ui;        
+    font-size: 2.5rem;
+           
+}
+span{
+    color: #91DDCF;
+    
+}
+.container_all{
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    gap: 8%;
+    top: 30%;
+    left: 25%;
+    width: 30%;
+    height: 50%;
+}
+.conteiner_encriptado{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;     
+    border: 2px groove #36c2ce; 
+    border-radius: 0px 40px;
+    
+}
+.container_desencriptado{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;     
+    border: 2px groove #36c2ce; 
+    border-radius: 0px 40px;
+}
+.container_copiar{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;     
+    border: 2px groove #36c2ce; 
+    border-radius: 0px 40px;
+}
+textarea{
+    font-family: "Flamenco", system-ui;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 7%;
+    
+}
+
+textarea:focus,
+.container_texto:active{
+    border: none;
+    outline: none;
+    
+}
+
+.encriptar{
+    font-family: "Flamenco", system-ui;
+    font-weight: 600;
+    font-size: 100%;
+    width: 78px;
+    height: 93px;
+    border-radius: 0 35px;   
+    position: absolute;
+    bottom: 90%;
+    right: 93%;
+    background: linear-gradient(#77e4c8, #36c2ce, #478ccf,#4535c1);        
+    border: 2px solid black;
+    box-shadow: 5px 5px 30px darkblue;
+    
+}
+.encriptar:hover{
+    color: white;
+    border: 2px solid black;
+    transition: ease all 1.0s;
+    transform: scale(1.1);
+}   
+
+
+.desencriptar{
+    color: black;
+    box-sizing: border-box;
+    font-family: "Flamenco", system-ui;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 78px;
+    height: 93px;
+    border-radius: 0 35px;    
+    position: absolute;
+    bottom: 57%;
+    right: 93%;
+    background: linear-gradient(#77e4c8, #36c2ce, #478ccf,#4535c1);
+    border: 2px solid black;
+    box-shadow: 5px 5px 30px darkblue;
+    
+}
+.desencriptar:hover{       
+    color: white;
+    border: 2px solid black;
+    transition: ease all 1.0s;
+    transform: scale(1.1);
+}   
+.copiar{
+    font-family: "Flamenco", system-ui;
+    font-size: 100%;
+    font-weight: 600;
+    color: black;
+    width: 78px;
+    height: 93px;
+    border-radius: 0 35px;    
+    position: absolute;
+    bottom: 24%;
+    right: 93%;
+    background: linear-gradient(#77e4c8, #36c2ce, #478ccf,#4535c1);
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 30px darkblue;
+}
+.copiar:hover{   
+color: white;
+border: 2px solid black;
+transition: ease all 1.0s;
+transform: scale(1.1);
+}
+.imagen_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 10%;
+        
+}
+
+.imagen{
+    width: 50%;
+    height: 90%;
+   
+}
+
+.footer{
+    font-size: 1rem;
+    font-family: "Flamenco", system-ui;   
+    background-color: transparent;
+    color: white;
+    width: 100%;    
+    height: 6rem;    
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    bottom: 0;
+    position: fixed;  
+    border: 3px double #4535c1    
+    
+}
+.main_container_about{
+    margin-top: 50px;
+    margin-left: 34%;
+    display: flex;
+    width: 30%;
+    height: 500px;
+    border: 5px double black;
+    text-align: center;   
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 4px 4px 20px 0px rgba(99, 137, 170, 0.43);
+    
+}
+.parrafo_about{
+    font-family: "Flamenco", system-ui; 
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+}
+@media (max-width: 900px) {
+    .imagen_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen{
+        display: none;
+        visibility: hidden;
+        top: 0;
+}      
+  .titulo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: inherit;
+           
+  }
+  h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.container_all{
+    display: flex;
+    width: 60%;
+    position: fixed
+     
+}
+.container.encriptar{
+    position: relative;
+}
+.container_desencriptado{
+    position: relative;
+}
+.container_copiar{
+    position: relative;
+}
+.copiar{
+    bottom: 45px;
+}
+
+.main_container_about{
+    width: 95%;
+    margin-left: 7px;
+
+}
+ }
+
