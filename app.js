@@ -23,10 +23,10 @@ function encriptarTexto() {
   }
 
   // Verificar si el texto contiene letras prohibidas (mayúsculas o con acentos)
-  let patronProhibido = /[áéíóúüÁÉÍÓÚÜA-Z]/;
+  let patronProhibido = /[áéíóúüÁÉÍÓÚÜA-Z!"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~]/;
   if (patronProhibido.test(texto)) {
     tituloMensaje.textContent = "Error al encriptar texto";
-    alert("No puedes encriptar palabras con letras mayúsculas o acentuadas.");
+    alert("No puedes encriptar palabras con letras mayúsculas, acentuadas o caracteres especiales.");
     return; // Termina la ejecución de la función si hay letras prohibidas
   }
 
@@ -40,6 +40,27 @@ function encriptarTexto() {
   } else {
     tituloMensaje.textContent = "Ningún mensaje fue encontrado";
     alert("No has seleccionado ningún texto para encriptar");
+  }
+}
+function desencriptarTexto() {
+  let texto = document.getElementById("texto").value.toLowerCase();
+  let tituloMensaje = document.getElementById("h1");  
+  let resultadoTextarea = document.getElementById("texto_2");
+  
+
+  let textoDesencriptado = texto
+    .replace(/enter/gi, "e")
+    .replace(/imes/gi, "i")
+    .replace(/ai/gi, "a")
+    .replace(/ober/gi, "o")
+    .replace(/ufat/gi, "u");
+
+  if (texto.length != 0) {
+    resultadoTextarea.value = textoDesencriptado;
+    tituloMensaje.textContent = "El texto se ha desencriptado correctamente!";   
+  } else {
+    tituloMensaje.textContent = "Ningún mensaje fue encontrado";    
+    alert("Selecciona el texto para desencriptar");
   }
 }
 function copiarTexto(copy) {
